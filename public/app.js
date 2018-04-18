@@ -36,19 +36,9 @@ const handleCountrySelection = function(event){
   displayCountryInformation(country);
 }
 
-// getCountryData = function (countryName) {
-//   const url = `https://restcountries.eu/rest/v2/name/${countryName}`
-//   makeRequest(url, requestCountry);
-// }
-
 const displayCountryInformation = function(country){
   const countryInformation = document.querySelector('#country-info')
   countryInformation.innerHTML = ''
-
-  // countryData.push(country.name)
-  // countryData.push(country.population)
-  // countryData.push(country.capital)
-  // countryData.push(country.flag)
 
   const nameH1 = document.createElement('h1');
   const populationH3 = document.createElement('h3');
@@ -56,8 +46,8 @@ const displayCountryInformation = function(country){
   const flagImg = document.createElement('img');
 
   nameH1.textContent = country.name;
-  populationH3.textContent = country.population;
-  capitalH3.textContent = country.capital;
+  populationH3.textContent = `Population: ${country.population}`;
+  capitalH3.textContent = `Capital: ${country.capital}`;
   flagImg.src = country.flag;
 
   countryInformation.appendChild(nameH1);

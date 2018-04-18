@@ -1,0 +1,34 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+body {
+  font-family: 'Gamja Flower', cursive;
+}
+
+select {
+  display: block;
+  margin: auto;
+}
+
+#world {
+  display: block;
+  margin: auto;
+  width: 300px;
+  border: solid 0.2rem white;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 500px;
+  border: solid 0.2rem black;
+}
+
+#country-info {
+
+}
