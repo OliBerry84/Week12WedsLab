@@ -29,6 +29,9 @@ img {
   border: solid 0.2rem black;
 }
 
-#country-info {
-
+#main-map {
+  display: block;
+  height: 300px;
+  width: 500px;
+  margin: auto;
 }
