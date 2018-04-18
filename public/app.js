@@ -57,7 +57,10 @@ const displayCountryInformation = function(country){
 
   const coords = {lat: country.latlng[0], lng:country.latlng[1]};
   const mainMap = new MapWrapper(map, coords, 5);
-  mainMap.addMarker(coords);
+  const infoWindow = `<p>Welcome to ${country.name}!</p>` +
+  `<p>In the region of ${country.region}</p>` +
+  `<p>In the subregion of ${country.subregion}</p>`;
+  mainMap.addMarker(coords, infoWindow);
 
   countryInformation.appendChild(nameH1);
   countryInformation.appendChild(populationH3);
