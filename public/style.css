@@ -13,6 +13,7 @@ body {
 select {
   display: block;
   margin: auto;
+  font-size: 20px;
 }
 
 #world {
@@ -32,6 +33,8 @@ img {
 #main-map {
   display: block;
   height: 300px;
-  width: 500px;
+  width: 700px;
   margin: auto;
+  border: solid 0.2rem black;
+  padding: 1rem;
 }

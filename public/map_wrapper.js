@@ -17,7 +17,7 @@ MapWrapper.prototype.addMarker = function (coords, contentString) {
 
   const infoWindow = new google.maps.InfoWindow ({
     content: contentString,
-    maxWidth: 300
+    maxWidth: 500
   });
 
   marker.addListener('click', function () {
