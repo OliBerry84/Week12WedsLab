@@ -26,6 +26,7 @@ select {
 img {
   display: block;
   margin: auto;
+  margin-bottom: 2rem;
   width: 500px;
   border: solid 0.2rem black;
 }
@@ -35,6 +36,7 @@ img {
   height: 300px;
   width: 700px;
   margin: auto;
+  margin-bottom: 2rem;
   border: solid 0.2rem black;
   padding: 1rem;
 }

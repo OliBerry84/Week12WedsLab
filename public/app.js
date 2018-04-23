@@ -49,7 +49,7 @@ const displayCountryInformation = function(country){
   const map = document.createElement('div');
 
   nameH1.textContent = country.name;
-  populationH3.textContent = `Population: ${country.population}`;
+  populationH3.textContent = `Population: ${country.population.toLocaleString()}`;
   capitalH3.textContent = `Capital: ${country.capital}`;
   borderCountriesH3.textContent = `Bordering Countries: ${country.borders}`;
   flagImg.src = country.flag;
@@ -68,5 +68,4 @@ const displayCountryInformation = function(country){
   countryInformation.appendChild(borderCountriesH3);
   countryInformation.appendChild(flagImg);
   countryInformation.appendChild(map);
-
 }
